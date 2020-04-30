@@ -17,11 +17,11 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/Menu' component={Menu} />
-        <Route exact path='/Reservation' component={Reservation} />
-        <Route exact path='/Tables' component={Tables} />
-        <Route exact path='/Comments' component={Comments} />
-        <Route exact path='/About' component={About} />
+        <Route exact path='/menu' component={Menu} />
+        <Route exact path='/reservation' component={Reservation} />
+        <Route exact path='/tables' component={Tables} />
+        <Route exact path='/comments' component={Comments} />
+        <Route exact path='/about' component={About} />
         <Route exact path='/Details/:customerId' component={Details} />
         <Route exact path='/Update/:customerId' component={Update} />
       </Switch>
