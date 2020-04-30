@@ -16,10 +16,10 @@ const TableList = (props) => (
         <br></br>
         <div className='buttons'>
           <Button variant='outline-success'>
-            <Link to={`/Details/${item.id}`}>Details</Link>
+            <Link to={`/details/${item.id}`}>Details</Link>
           </Button>{" "}
           <Button variant='outline-warning'>
-            <Link to={`/Update/${item.id}`}>Update</Link>
+            <Link to={`/update/${item.id}`}>Update</Link>
           </Button>{" "}
           <Button
             variant='outline-danger'

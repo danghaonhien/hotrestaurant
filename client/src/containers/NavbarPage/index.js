@@ -50,13 +50,13 @@ class NavbarPage extends Component {
               <MDBCollapse isOpen={this.state.collapse1} navbar>
                 <MDBNavbarNav left>
                   <MDBNavItem active>
-                    <MDBBtn href='/Menu' size='sm' className='buttonMenu'>
+                    <MDBBtn href='/menu' size='sm' className='buttonMenu'>
                       Menu
                     </MDBBtn>
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBBtn
-                      href='/Reservation'
+                      href='/reservation'
                       size='sm'
                       className='buttonMenu'
                     >
@@ -64,17 +64,17 @@ class NavbarPage extends Component {
                     </MDBBtn>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBBtn href='/Tables' size='sm' className='buttonMenu'>
+                    <MDBBtn href='/tables' size='sm' className='buttonMenu'>
                       Waiting List
                     </MDBBtn>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBBtn href='/About' size='sm' className='buttonMenu'>
+                    <MDBBtn href='/about' size='sm' className='buttonMenu'>
                       About
                     </MDBBtn>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBBtn href='/Comments' size='sm' className='buttonMenu'>
+                    <MDBBtn href='/comments' size='sm' className='buttonMenu'>
                       Feedback
                     </MDBBtn>
                   </MDBNavItem>

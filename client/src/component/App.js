@@ -17,13 +17,13 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/menu' component={Menu} />
-        <Route exact path='/reservation' component={Reservation} />
-        <Route exact path='/tables' component={Tables} />
-        <Route exact path='/comments' component={Comments} />
-        <Route exact path='/about' component={About} />
-        <Route exact path='/Details/:customerId' component={Details} />
-        <Route exact path='/Update/:customerId' component={Update} />
+        <Route path='/menu' component={Menu} />
+        <Route path='/reservation' component={Reservation} />
+        <Route path='/tables' component={Tables} />
+        <Route path='/comments' component={Comments} />
+        <Route path='/about' component={About} />
+        <Route path='/details/:customerId' component={Details} />
+        <Route path='/update/:customerId' component={Update} />
       </Switch>
       <Footer />
     </Router>

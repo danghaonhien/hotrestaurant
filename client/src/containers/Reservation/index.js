@@ -53,7 +53,7 @@ class Reservation extends Component {
             WE ONLY HAVE {10 - this.state.count} AVAILABLE TABLES LEFT OF 10.
           </h5>
           <button type='button' className='btn btn-secondary'>
-            <Link className='nav-link' to='/Tables'>
+            <Link className='nav-link' to='/tables'>
               View Tables
             </Link>{" "}
             <i className='fa fa-list-alt'></i>
