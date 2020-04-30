@@ -13,8 +13,10 @@ const apiRoutes = require("./apiRoutes");
 router.use("/api", apiRoutes);
 router.get("*", (req, res) => {
   if (process.env.NODE_ENV === "production") {
-    res.sendFile(path.join(__dirname, "build", "index.html"));
+    res.sendFile(path.join(__dirname, "index.html"));
   }
 });
-
+// console.log(path.join(__dirname, "build", "index.html"));
+// console.log(path.join(__dirname, "client", "build", "index.html"));
+// console.log(__dirname);
 module.exports = router;
