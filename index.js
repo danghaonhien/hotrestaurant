@@ -20,7 +20,7 @@ const routes = require("./routes");
 app.use(routes);
 if (process.env.NODE_ENV === "production") {
   app.get("*", function (request, response) {
-    response.sendFile("./client/build/index.html");
+    response.sendFile(path.resolve("./client/build/index.html"));
   });
 } else {
   app.get("*", function (request, response) {
