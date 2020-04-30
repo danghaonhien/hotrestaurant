@@ -1,0 +1,43 @@
+.table {
+  background-color: white;
+  height: 40px;
+  font-size: 30px;
+  color: lightseagreen;
+  font-style: oblique;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 70%;
+  font-weight: 600;
+}
+.tableList {
+  width: 100%;
+  text-align: center;
+}
+.wait {
+  background-color: white;
+  height: 40px;
+  font-size: 30px;
+  color: lightseagreen;
+  font-style: oblique;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 70%;
+  font-weight: 600;
+}
+.waitList {
+  width: 70%;
+}
+
+#jumbo {
+  background-color: palegoldenrod;
+}
+
+.tableNo {
+  font-family: serif;
+  font-size: medium;
+}
+
+.buttons {
+  text-align: center;
+}
+.list {
+  text-align: left;
+}

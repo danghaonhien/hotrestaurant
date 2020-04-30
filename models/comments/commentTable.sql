@@ -1,0 +1,12 @@
+CREATE TABLE commentTb (
+    id INT AUTO_INCREMENT NOT NULL,
+    comments VARCHAR(500) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE replyTb (
+    id INT AUTO_INCREMENT NOT NULL,
+    reply VARCHAR(500) NOT NULL,
+    comment_id INT NOT NULL,
+    PRIMARY KEY (id)
+);
