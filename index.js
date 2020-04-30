@@ -18,8 +18,14 @@ const routes = require("./routes");
 
 // Prepend / to any route declared inside of routes
 app.use(routes);
+if (process.env.NODE_ENV === "production") {
+  app.get("*", function (request, response) {
+    response.sendFile("./client/build/index.html");
+  });
+} else {
+  app.get("*", function (request, response) {
+    response.sendFile(path.resolve(__dirname, "public", "index.html"));
+  });
+}
 
-app.get("*", function (request, response) {
-  response.sendFile(path.resolve(__dirname, "public", "index.html"));
-});
 app.listen(PORT, () => console.log("Port started on port: " + PORT));
