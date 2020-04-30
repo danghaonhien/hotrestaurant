@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const path = require("path");
+// const path = require("path");
 // Getting / prepended to everything
 // Hey I declared routes here.
 const apiRoutes = require("./apiRoutes");
