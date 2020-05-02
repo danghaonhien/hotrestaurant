@@ -41,7 +41,7 @@ class TodoListItem extends Component {
             const res =  await axios.patch(`/api/customer/${this.props.match.params.customerId}`, {name: this.state.name , email: this.state.email ,phone: this.state.phone});
             const { data } =  await axios.get(`/api/customer/${this.props.match.params.customerId}`);
             this.setState({customer : data , name: "" , email: "" , phone: "" });
-            // this.setState({ todo: data });
+           
         } catch(e) {
            console.log(e);
         }
@@ -49,9 +49,7 @@ class TodoListItem extends Component {
     render() {
         console.log(this.props);
         const { customer } = this.state;
-        // console.log(this.state.name);
-        // console.log(this.state.email);
-        // console.log(this.state.phone);
+
         
         return (
             <div className= "container" >
@@ -101,7 +99,7 @@ class TodoListItem extends Component {
                 placeholder='Phone Number'
                 />
             </div>
-            {/* <button onClick={this.handleSubmit}>Submit Change</button> */}
+  
             <Button variant="outline-primary" onClick={this.handleSubmit}>Submit</Button>
            
           </form>

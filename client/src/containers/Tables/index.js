@@ -22,9 +22,8 @@ class Tables extends Component {
   };
   fetchCoustomer = () => {
     axios.get("/api/customer").then((res) => {
-      //console.log(res.data.length);
       let dataPost = res.data;
-      // let dataCopy = [...dataPOst];
+
       let waitListCopy = [];
       let tableCopy = [];
       for (let i = 0; i < dataPost.length; i++) {

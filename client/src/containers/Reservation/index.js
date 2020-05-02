@@ -34,14 +34,11 @@ class Reservation extends Component {
     });
   };
   handleFormSubmit = (event) => {
-    console.log("I happened");
-    // The second parameter to this post request is going to become req.body
     axios.post("/api/customer", this.state).then((res) => {
       this.setState({ name: "", email: "", phone: "" });
     });
   };
   render() {
-    // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div className='container'>
         <div className='jumbotron text-center'>
